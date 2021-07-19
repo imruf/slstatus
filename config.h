@@ -64,12 +64,10 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	/* { run_command, "%s|",          "forecast" }, */
-	{ netspeed_tx,   "  %sB ",    "wlp4s0" },
-	{ netspeed_rx,   "  %sB|",    "wlp4s0" },
-	{ ram_used,   " %s|",             NULL },
-	{ cpu_perc,   " %s%%|",           NULL },
-	{ run_command, "%s|",         "dwmbattery" },
-	{ run_command, "%s|",          "dwmvolume" },
-	{ run_command, "%s|",           "dwmclock" },
-	{ wifi_perc,   "📶%s%%",       "wlp4s0" },
+	{ run_command,      "%s|",      "dwmweather" },
+	{ run_command,      "%s|",      "dwmkb" },
+	{ run_command,      "%s|",      "dwmvolume" },
+	{ run_command,      "%s|",      "dwmbattery" },
+	{ run_command,      "%s|",      "dwmclock" },
+	{ run_command,      "%s",       "dwminternet" },
 };
